@@ -6,7 +6,81 @@
 <head>
     <meta charset="UTF-8">
     <title>Agents</title>
-    <style type="text/css">
+
+</head>
+
+<body background="tu.jpg" >
+<p>
+<video id="myvideo" height="650px" width="500px"; class="center" src="male.mp4" type="video/mp4"></video>
+</p>
+<!-- <input type="btn" value="click" onclick="hi();smile();sad();surprise();"/> -->
+<div class="center"><button onclick="hi()" class="button button1">Hi!</button></div>
+<div class="center"><button onclick="smile()" class="button button1">Smile!</button></div>
+<div class="center"><button onclick="sad()" class="button button1">Sad!</button></div>
+<div class="center"><button onclick="surprise()" class="button button1">Surprise!</button></div>
+
+</body>
+</html>
+
+<script>
+    function hi(){
+      var video= document.getElementById("myvideo");
+      video.currentTime=2;
+      video.play();
+      console.log(video.currentTime);
+      setInterval(function(){
+
+        if(video.currentTime>5){
+
+          video.pause();
+        }
+      },4000);
+    }
+    function smile()
+    {
+      var video= document.getElementById("myvideo");
+      video.currentTime=6;
+      video.play();
+      console.log(video.currentTime);
+      setInterval(function(){
+
+        if(video.currentTime>9){
+
+          video.pause();
+        }
+      },1500);
+    }
+     function sad()
+    {
+      var video= document.getElementById("myvideo");
+      video.currentTime=8;
+      video.play();
+      console.log(video.currentTime);
+      setInterval(function(){
+
+        if(video.currentTime>=10){
+
+          video.pause();
+        }
+      },1700);
+    }
+function surprise()
+    {
+      var video= document.getElementById("myvideo");
+      video.currentTime=11;
+      video.play();
+      console.log(video.currentTime);
+      setInterval(function(){
+
+        if(video.currentTime>13){
+
+          video.pause();
+        }
+      },4000);
+    }
+</script>
+
+<style type="text/css">
         .center {
       margin-left: auto;
       margin-right: auto;
@@ -97,73 +171,3 @@ section {
 }
 
 </style>
-</head>
-
-<body background="tu.jpg" >
-<p>
-<video id="myvideo" height="650px" width="500px"; class="center" src="male.mp4" type="video/mp4"></video>
-</p>
-<!-- <input type="btn" value="click" onclick="hi();smile();sad();surprise();"/> -->
-<div class="center"><button onclick="hi()" class="button button1">Hi!</button></div>
-<div class="center"><button onclick="smile()" class="button button1">Smile!</button></div>
-<div class="center"><button onclick="sad()" class="button button1">Sad!</button></div>
-<div class="center"><button onclick="surprise()" class="button button1">Surprise!</button></div>
-<script>
-    function hi(){
-      var video= document.getElementById("myvideo");
-      video.currentTime=2;
-      video.play();
-      console.log(video.currentTime);
-      setInterval(function(){
-
-        if(video.currentTime>5){
-
-          video.pause();
-        }
-      },4000);
-    }
-    function smile()
-    {
-      var video= document.getElementById("myvideo");
-      video.currentTime=6;
-      video.play();
-      console.log(video.currentTime);
-      setInterval(function(){
-
-        if(video.currentTime>9){
-
-          video.pause();
-        }
-      },1500);
-    }
-     function sad()
-    {
-      var video= document.getElementById("myvideo");
-      video.currentTime=8;
-      video.play();
-      console.log(video.currentTime);
-      setInterval(function(){
-
-        if(video.currentTime>=10){
-
-          video.pause();
-        }
-      },1700);
-    }
-function surprise()
-    {
-      var video= document.getElementById("myvideo");
-      video.currentTime=11;
-      video.play();
-      console.log(video.currentTime);
-      setInterval(function(){
-
-        if(video.currentTime>13){
-
-          video.pause();
-        }
-      },4000);
-    }
-</script>
-</body>
-</html>
