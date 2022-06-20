@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <h1>Human Pedagogical Agent</h1>
+  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Agents</title>
+  </head>
+
+<body  background="tu.jpg">
+<p align="center">Select the Agent</p>
+ <div class="wrapper">
+     <button  onclick="femaleAgent()" >Female Agent</button>
+
+
+</div>
+ <div class="wrap">
+
+
+     <button  onclick="maleAgent()">Male Agent</button>
+</div>
+</body>
+</html>
+<script>
+    function maleAgent(){
+        document.location.href="MaleAgent.html";
+    }
+    function femaleAgent() {
+        document.location.href = "FemaleAgent.html";
+    }
+</script>
+<style>
+
+
+  html {
+    font-family: "Roboto", sans-serif;
+  }
+  header {
+    width: 100%;
+    height: 5rem;
+    background-color: #014616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ .wrapper {
+    text-align: center;
+}
+.wrap{
+ text-align: center;
+    position: center;
+    top: 50%;
+
+}
+
+
+button {
+  padding: 10px;
+  font-family: inherit;
+  background-color: #004112;
+  border: none;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+  header h1 {
+    color: white;
+    margin: 0;
+  }
+  body {
+    margin: 0;
+  }
+
+  p {
+       border: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    opacity: 50;
+      alignment: center;
+  }
+
+
+
+  button:hover,
+  button:active {
+    background-color: #024100;
+    border-color: #024100;
+  }
+  section {
+    padding: 1rem;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+</style>

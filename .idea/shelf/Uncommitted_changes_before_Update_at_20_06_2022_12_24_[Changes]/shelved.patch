@@ -1,0 +1,452 @@
+Index: switch.html
+===================================================================
+diff --git a/switch.html b/switch.html
+deleted file mode 100644
+--- a/switch.html	(revision 25dd60c6b43ec1c314606683784e7f7e78de87a9)
++++ /dev/null	(revision 25dd60c6b43ec1c314606683784e7f7e78de87a9)
+@@ -1,169 +0,0 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-  <header>
+-    <h1>Human Pedagogical Agent</h1>
+-  </header>
+-<head>
+-    <meta charset="UTF-8">
+-    <title>Agents</title>
+-    <style type="text/css">
+-        .center {
+-      margin-left: auto;
+-      margin-right: auto;
+-      display: block;
+-       }
+-        .center {
+-  display: flex;
+-  justify-content: center;
+-  align-items: center;
+-
+-}
+-html {
+-  font-family: 'Roboto', sans-serif;
+-}
+-header {
+-  width: 100%;
+-  height: 5rem;
+-  background-color: #014616;
+-  display: flex;
+-  justify-content: center;
+-  align-items: center;
+-}
+-
+-header h1 {
+-  color: white;
+-  margin: 0;
+-}
+-body {
+-  margin: 0;
+-}
+-.button {
+-  border: none;
+-  color: white;
+-  padding: 16px 32px;
+-  text-align: center;
+-  text-decoration: none;
+-  display: inline-block;
+-  font-size: 16px;
+-  margin: 4px 2px;
+-  transition-duration: 0.4s;
+-  cursor: pointer;
+-}
+-p {
+-  opacity: 1;
+-}
+-
+-button {
+-  padding: 0.75rem 1.5rem;
+-  font-family: inherit;
+-  background-color: #055a05;
+-  border: 1px solid #055a05;
+-  color: white;
+-  cursor: pointer;
+-}
+-
+-button:hover,
+-button:active {
+-  background-color: #1b72e4;
+-  border-color: #1b72e4;
+-}
+-section {
+-  padding: 1rem;
+-}
+-
+-
+-* {
+-            margin: 0;
+-            padding: 0;
+-        }
+-        .imgbox {
+-            display: grid;
+-            height: 100%;
+-        }
+-        .center-fit {
+-            max-width: 100%;
+-            max-height: 100vh;
+-            margin: auto;
+-        }
+-.flat {
+-  background-color: transparent;
+-  color: #1b72e4;
+-  border: none;
+-}
+-
+-.flat:hover,
+-.flat:active {
+-  background-color: #edd2ff;
+-}
+-
+-</style>
+-</head>
+-
+-<body background="tu.jpg" >
+-<p>
+-<video id="myvideo" height="650px" width="500px"; class="center" src="male.mp4" type="video/mp4"></video>
+-</p>
+-<!-- <input type="btn" value="click" onclick="hi();smile();sad();surprise();"/> -->
+-<div class="center"><button onclick="hi()" class="button button1">Hi!</button></div>
+-<div class="center"><button onclick="smile()" class="button button1">Smile!</button></div>
+-<div class="center"><button onclick="sad()" class="button button1">Sad!</button></div>
+-<div class="center"><button onclick="surprise()" class="button button1">Surprise!</button></div>
+-<script>
+-    function hi(){
+-      var video= document.getElementById("myvideo");
+-      video.currentTime=2;
+-      video.play();
+-      console.log(video.currentTime);
+-      setInterval(function(){
+-
+-        if(video.currentTime>5){
+-
+-          video.pause();
+-        }
+-      },4000);
+-    }
+-    function smile()
+-    {
+-      var video= document.getElementById("myvideo");
+-      video.currentTime=6;
+-      video.play();
+-      console.log(video.currentTime);
+-      setInterval(function(){
+-
+-        if(video.currentTime>9){
+-
+-          video.pause();
+-        }
+-      },1500);
+-    }
+-     function sad()
+-    {
+-      var video= document.getElementById("myvideo");
+-      video.currentTime=8;
+-      video.play();
+-      console.log(video.currentTime);
+-      setInterval(function(){
+-
+-        if(video.currentTime>=10){
+-
+-          video.pause();
+-        }
+-      },1700);
+-    }
+-function surprise()
+-    {
+-      var video= document.getElementById("myvideo");
+-      video.currentTime=11;
+-      video.play();
+-      console.log(video.currentTime);
+-      setInterval(function(){
+-
+-        if(video.currentTime>13){
+-
+-          video.pause();
+-        }
+-      },4000);
+-    }
+-</script>
+-</body>
+-</html>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"01d95aaa-fc85-4744-8cab-1aefb926cb9c\" name=\"Changes\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"29vJNir2VqrulkMwt1p96FyCwd1\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"true\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"switch.html\" type=\"JavascriptDebugType\" temporary=\"true\" nameIsGenerated=\"true\" uri=\"http://localhost:63342/master/switch.html\" useBuiltInWebServerPort=\"true\">\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"JavaScript Debug.switch.html\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"01d95aaa-fc85-4744-8cab-1aefb926cb9c\" name=\"Changes\" comment=\"\" />\r\n      <created>1653987594843</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1653987594843</updated>\r\n      <workItem from=\"1653987597115\" duration=\"15000\" />\r\n      <workItem from=\"1655195085007\" duration=\"1104000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 25dd60c6b43ec1c314606683784e7f7e78de87a9)
++++ b/.idea/workspace.xml	(date 1655720609270)
+@@ -1,11 +1,22 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="01d95aaa-fc85-4744-8cab-1aefb926cb9c" name="Changes" comment="" />
++    <list default="true" id="01d95aaa-fc85-4744-8cab-1aefb926cb9c" name="Changes" comment="">
++      <change afterPath="$PROJECT_DIR$/FemaleAgent.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/switch.html" beforeDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="FileTemplateManagerImpl">
++    <option name="RECENT_TEMPLATES">
++      <list>
++        <option value="HTML File" />
++      </list>
++    </option>
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -20,17 +31,22 @@
+     <option name="showLibraryContents" value="true" />
+   </component>
+   <component name="PropertiesComponent">
++    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="true" />
+     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+   </component>
+-  <component name="RunManager">
++  <component name="RunManager" selected="JavaScript Debug.Mainpage.html">
++    <configuration name="Mainpage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/master/Mainpage.html" useBuiltInWebServerPort="true">
++      <method v="2" />
++    </configuration>
+     <configuration name="switch.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/master/switch.html" useBuiltInWebServerPort="true">
+       <method v="2" />
+     </configuration>
+     <recent_temporary>
+       <list>
++        <item itemvalue="JavaScript Debug.Mainpage.html" />
+         <item itemvalue="JavaScript Debug.switch.html" />
+       </list>
+     </recent_temporary>
+@@ -44,7 +60,8 @@
+       <option name="presentableId" value="Default" />
+       <updated>1653987594843</updated>
+       <workItem from="1653987597115" duration="15000" />
+-      <workItem from="1655195085007" duration="1104000" />
++      <workItem from="1655195085007" duration="2121000" />
++      <workItem from="1655658245165" duration="10552000" />
+     </task>
+     <servers />
+   </component>
+Index: FemaleAgent.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/FemaleAgent.html b/FemaleAgent.html
+new file mode 100644
+--- /dev/null	(date 1655718188520)
++++ b/FemaleAgent.html	(date 1655718188520)
+@@ -0,0 +1,196 @@
++<!DOCTYPE html>
++<html lang="en">
++  <header>
++    <h1>Human Pedagogical Agent</h1>
++  </header>
++ <head>
++    <meta charset="UTF-8" />
++    <title>Agents</title>
++  </head>
++
++<body background="tu.jpg">
++    <p>
++
++      <video
++        id="myvideo"
++        height="800px"
++        width="800px"
++        ;
++        class="center"
++        src="Female_animation.mp4"
++        type="video/mp4"
++      ></video>
++        <div style = "display: flex;justify-content: center;align-items: center; margin-top: 20px;">
++      <input style="height: 26px;border-radius: 8px;padding: 8px;width: 158px;" placeholder="Enter emotion" id = 'emotion-input'/>
++      <div style = "margin-right: 20px;"></div>
++      <button onclick="executeGivenEmotion()">Check</button>
++    </div>
++     </p>
++  </body>
++</body>
++</html>
++
++<script>
++ function hi() {
++    var video = document.getElementById("myvideo");
++    video.currentTime = 2;
++    video.play();
++    console.log(video.currentTime);
++
++    setTimeout(() => {
++      if (video.currentTime > 6) {
++        video.pause();
++      }
++    }, 4000);
++
++  }
++
++  function executeGivenEmotion(event) {
++    const inputToTakeEmotion = document.getElementById('emotion-input');
++    const emotionName = inputToTakeEmotion.value;
++    switch (emotionName.toLowerCase()) {
++      case 'hi':
++        hi()
++        break;
++      case 'smile':
++      smile();
++      break;
++      case 'sad':
++      sad();
++      break;
++      case 'surprise':
++      surprise();
++      break;
++
++      default:
++        window.alert('given emotion not found.')
++        break;
++    }
++
++
++  }
++  function smile() {
++    var video = document.getElementById("myvideo");
++    video.currentTime = 7;
++    video.play();
++    setTimeout(() => {
++      if (video.currentTime > 9) {
++        video.pause();
++      }
++    }, 4000);
++  }
++
++  function sad() {
++    var video = document.getElementById("myvideo");
++    video.currentTime = 8;
++    video.play();
++    console.log(video.currentTime);
++    setTimeout(() => {
++      if (video.currentTime >= 10) {
++        video.pause();
++      }
++    }, 4000);
++  }
++  function surprise() {
++    var video = document.getElementById("myvideo");
++    video.currentTime = 11;
++    video.play();
++    console.log(video.currentTime);
++    setTimeout(() => {
++      if (video.currentTime > 13) {
++        video.pause();
++      }
++    }, 4000);
++
++  }
++</script>
++
++
++<style type="text/css">
++  .center {
++    margin-left: auto;
++    margin-right: auto;
++    display: block;
++  }
++  .center {
++    display: flex;
++    justify-content: center;
++    align-items: center;
++  }
++  html {
++    font-family: "Roboto", sans-serif;
++  }
++  header {
++    width: 100%;
++    height: 5rem;
++    background-color: #014616;
++    display: flex;
++    justify-content: center;
++    align-items: center;
++  }
++
++  header h1 {
++    color: white;
++    margin: 0;
++  }
++  body {
++    margin: 0;
++  }
++  .button {
++    border: none;
++    color: white;
++    padding: 16px 32px;
++    text-align: center;
++    text-decoration: none;
++    display: inline-block;
++    font-size: 16px;
++    margin: 4px 2px;
++    transition-duration: 0.4s;
++    cursor: pointer;
++  }
++  p {
++    opacity: 1;
++  }
++
++  button {
++    padding: 0.75rem 1.5rem;
++    font-family: inherit;
++    background-color: #055a05;
++    border: 1px solid #055a05;
++    color: white;
++    cursor: pointer;
++  }
++
++  button:hover,
++  button:active {
++    background-color: #1b72e4;
++    border-color: #1b72e4;
++  }
++  section {
++    padding: 1rem;
++  }
++
++  * {
++    margin: 0;
++    padding: 0;
++  }
++  .imgbox {
++    display: grid;
++    height: 100%;
++  }
++  .center-fit {
++    max-width: 100%;
++    max-height: 100vh;
++    margin: auto;
++  }
++  .flat {
++    background-color: transparent;
++    color: #1b72e4;
++    border: none;
++  }
++
++  .flat:hover,
++  .flat:active {
++    background-color: #edd2ff;
++  }
++</style>
+\ No newline at end of file
