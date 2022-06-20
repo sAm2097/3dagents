@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <header>
+    <h1>Human Pedagogical Agent</h1>
+  </header>
+ <head>
+    <meta charset="UTF-8" />
+    <title>Agents</title>
+  </head>
+
+<body background="tu.jpg">
+    <p>
+
+      <video
+        id="myvideo"
+        height="800px"
+        width="800px"
+        ;
+        class="center"
+        src="Female_animation.mp4"
+        type="video/mp4"
+      ></video>
+        <div style = "display: flex;justify-content: center;align-items: center; margin-top: 20px;">
+      <input style="height: 26px;border-radius: 8px;padding: 8px;width: 158px;" placeholder="Enter emotion" id = 'emotion-input'/>
+      <div style = "margin-right: 20px;"></div>
+      <button onclick="executeGivenEmotion()">Check</button>
+    </div>
+     </p>
+  </body>
+</body>
+</html>
+
+<script>
+ function hi() {
+    var video = document.getElementById("myvideo");
+    video.currentTime = 2;
+    video.play();
+    console.log(video.currentTime);
+
+    setTimeout(() => {
+      if (video.currentTime > 6) {
+        video.pause();
+      }
+    }, 4000);
+
+  }
+
+  function executeGivenEmotion(event) {
+    const inputToTakeEmotion = document.getElementById('emotion-input');
+    const emotionName = inputToTakeEmotion.value;
+    switch (emotionName.toLowerCase()) {
+      case 'hi':
+        hi()
+        break;
+      case 'smile':
+      smile();
+      break;
+      case 'sad':
+      sad();
+      break;
+      case 'surprise':
+      surprise();
+      break;
+
+      default:
+        window.alert('given emotion not found.')
+        break;
+    }
+
+
+  }
+  function smile() {
+    var video = document.getElementById("myvideo");
+    video.currentTime = 7;
+    video.play();
+    setTimeout(() => {
+      if (video.currentTime > 9) {
+        video.pause();
+      }
+    }, 4000);
+  }
+
+  function sad() {
+    var video = document.getElementById("myvideo");
+    video.currentTime = 8;
+    video.play();
+    console.log(video.currentTime);
+    setTimeout(() => {
+      if (video.currentTime >= 10) {
+        video.pause();
+      }
+    }, 4000);
+  }
+  function surprise() {
+    var video = document.getElementById("myvideo");
+    video.currentTime = 11;
+    video.play();
+    console.log(video.currentTime);
+    setTimeout(() => {
+      if (video.currentTime > 13) {
+        video.pause();
+      }
+    }, 4000);
+
+  }
+</script>
+
+
+<style type="text/css">
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  html {
+    font-family: "Roboto", sans-serif;
+  }
+  header {
+    width: 100%;
+    height: 5rem;
+    background-color: #014616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header h1 {
+    color: white;
+    margin: 0;
+  }
+  body {
+    margin: 0;
+  }
+  .button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  p {
+    opacity: 1;
+  }
+
+  button {
+    padding: 0.75rem 1.5rem;
+    font-family: inherit;
+    background-color: #055a05;
+    border: 1px solid #055a05;
+    color: white;
+    cursor: pointer;
+  }
+
+  button:hover,
+  button:active {
+    background-color: #1b72e4;
+    border-color: #1b72e4;
+  }
+  section {
+    padding: 1rem;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .imgbox {
+    display: grid;
+    height: 100%;
+  }
+  .center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+  }
+  .flat {
+    background-color: transparent;
+    color: #1b72e4;
+    border: none;
+  }
+
+  .flat:hover,
+  .flat:active {
+    background-color: #edd2ff;
+  }
+</style>
