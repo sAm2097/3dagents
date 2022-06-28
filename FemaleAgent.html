@@ -12,7 +12,7 @@
     <p>
 
       <video
-        id="myvideo"
+        id="femalevideo"
         height="800px"
         width="800px"
         ;
@@ -21,9 +21,11 @@
         type="video/mp4"
       ></video>
         <div style = "display: flex;justify-content: center;align-items: center; margin-top: 20px;">
-      <input style="height: 26px;border-radius: 8px;padding: 8px;width: 158px;" placeholder="Enter emotion" id = 'emotion-input'/>
+        <form id="input">
+
+      <input style="height: 26px;border-radius: 8px;padding: 8px;width: 158px;" placeholder="Enter emotion" id = 'emotion-input'></form>
       <div style = "margin-right: 20px;"></div>
-      <button onclick="executeGivenEmotion()">Check</button>
+<!--      <button onclick="executeGivenEmotion()">Check</button>-->
     </div>
      </p>
   </body>
@@ -31,21 +33,22 @@
 </html>
 
 <script>
- function hi() {
-    var video = document.getElementById("myvideo");
-    video.currentTime = 2;
-    video.play();
-    console.log(video.currentTime);
 
-    setTimeout(() => {
-      if (video.currentTime > 6) {
-        video.pause();
-      }
-    }, 4000);
+ const myInput=document.getElementById('emotion-input');
 
-  }
+  myInput.addEventListener("keydown", e=>{
+    console.log(e);
 
-  function executeGivenEmotion(event) {
+    if (e.key==='Enter')
+    {
+
+      document.getElementById('input').addEventListener('onsubmit',executeGivenEmotion());
+    e.preventDefault();
+    }
+
+  })
+  function executeGivenEmotion(event)
+  {
     const inputToTakeEmotion = document.getElementById('emotion-input');
     const emotionName = inputToTakeEmotion.value;
     switch (emotionName.toLowerCase()) {
@@ -66,41 +69,48 @@
         window.alert('given emotion not found.')
         break;
     }
+  }
+  function hi() {
+    var video = document.getElementById("femalevideo");
+    video.currentTime = 2;
+    video.play();
+    console.log(video.currentTime);
 
+    setTimeout(() => {
+
+         video.pause();
+    }, 4000);
 
   }
   function smile() {
-    var video = document.getElementById("myvideo");
-    video.currentTime = 7;
+    var video = document.getElementById("femalevideo");
+    video.currentTime = 6;
     video.play();
     setTimeout(() => {
-      if (video.currentTime > 9) {
-        video.pause();
-      }
-    }, 4000);
+
+         video.pause();
+    }, 2000);
   }
 
   function sad() {
-    var video = document.getElementById("myvideo");
+    var video = document.getElementById("femalevideo");
     video.currentTime = 8;
     video.play();
     console.log(video.currentTime);
-    setTimeout(() => {
-      if (video.currentTime >= 10) {
-        video.pause();
-      }
-    }, 4000);
+     setTimeout(() => {
+
+       video.pause();
+    }, 2000);
   }
   function surprise() {
-    var video = document.getElementById("myvideo");
+    var video = document.getElementById("femalevideo");
     video.currentTime = 11;
     video.play();
     console.log(video.currentTime);
-    setTimeout(() => {
-      if (video.currentTime > 13) {
+     setTimeout(() => {
+
         video.pause();
-      }
-    }, 4000);
+    }, 2000);
 
   }
 </script>
