@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<header>
-    <h1>Human Pedagogical Agent</h1>
-  </header>
+
   <head>
     <meta charset="UTF-8" />
     <title>Agents</title>
   </head>
 
 <body  background="tu.jpg">
-<p align="center">Select the Agent</p>
+<header>
+    <h1>Human Pedagogical Agent</h1>
+  </header>
+<div id="position">
+<h1 align="center">Select the Agent</h1>
  <div class="wrapper">
      <button  onclick="femaleAgent()" >Female Agent</button>
 </div>
+<br>
  <div class="wrap">
-    <button  onclick="maleAgent()">Male Agent</button>
+
+     <button  onclick="maleAgent()">Male Agent</button>
+</div>
 </div>
 </body>
 </html>
@@ -49,12 +54,14 @@
 
 }
 
+
 button {
   padding: 10px;
+    font-size :20px;
   font-family: inherit;
   background-color: #004112;
   border: none;
-    border-radius: 50%;
+    border-radius: 10px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   color: #ffffff;
   cursor: pointer;
@@ -66,14 +73,21 @@ button {
   }
   body {
     margin: 0;
-  }
+       }
+#position{
+    margin-top: 350px;
+    margin-left:650px;
+    width:600px;
+    height: 200px;
+    padding: 20px;
+    border-radius:10px;
+    background-color: rgba(256,256,256,0.5);
+}
 
-  p {
-       border: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-    opacity: 50;
+
+  h1 {
+      font-size:300%;
+      color: #282121;
       alignment: center;
   }
 
