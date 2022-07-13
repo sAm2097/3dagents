@@ -10,7 +10,6 @@
 
   <body background="tu.jpg">
     <p>
-
       <video
         id="malevideo"
         height="800px"
@@ -20,19 +19,20 @@
         src="male.mp4"
         type="video/mp4"
       ></video>
-        <div style = "display: flex;justify-content: center;align-items: center; margin-top: 20px;">
-      <form id="input">
 
-      <input style="height: 26px;border-radius: 8px;padding: 8px;width: 158px;" placeholder="Enter emotion" id = 'emotion-input'></form>
+    <!-- <div style = "display: flex;justify-content: center;align-items: center; margin-top: 2px;">
+      <form id="input">
+        <input style="height: 26px;border-radius: 8px;padding: 8px;width: 158px;" placeholder="Enter emotion" id = 'emotion-input'>
+      </form>
       <div style = "margin-right: 20px;"></div>
-<!--      <button onclick="executeGivenEmotion()">Check</button>-->
-    </div>
+
+    </div>-->
     </p>
-    <!-- <input type="btn" value="click" onclick="hi();smile();sad();surprise();"/> -->
-    <!-- <div class="center"><button onclick="hi()" class="button button1">Hi!</button></div>
+    <input type="btn" value="click" onclick="hi();smile();sad();surprise();"/>
+     <div class="center"><button onclick="hi()" class="button button1">Hi!</button></div>
     <div class="center"><button onclick="smile()" class="button button1">Smile!</button></div>
     <div class="center"><button onclick="sad()" class="button button1">Sad!</button></div>
-    <div class="center"><button onclick="surprise()" class="button button1">Surprise!</button></div> -->
+    <div class="center"><button onclick="surprise()" class="button button1">Surprise!</button></div>
   </body>
 </html>
 
@@ -152,18 +152,7 @@
   body {
     margin: 0;
   }
-  .button {
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  }
+
   p {
     opacity: 1;
   }
@@ -190,23 +179,5 @@
     margin: 0;
     padding: 0;
   }
-  .imgbox {
-    display: grid;
-    height: 100%;
-  }
-  .center-fit {
-    max-width: 100%;
-    max-height: 100vh;
-    margin: auto;
-  }
-  .flat {
-    background-color: transparent;
-    color: #1b72e4;
-    border: none;
-  }
 
-  .flat:hover,
-  .flat:active {
-    background-color: #edd2ff;
-  }
 </style>
